@@ -12,17 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="animated-bg"></div>
     <div class="container">
-      <h1 style="font-size: 12px">Welcome to MC Shortener</h1>
+      <h1 style="font-size: 12px">
+        <img src="assets/grass.png" />Welcome to my Shortener
+      </h1>
 
       <div class="register visible" id="register">
         <h2>Create a new account</h2>
@@ -35,7 +31,7 @@
             placeholder="Password"
             required
           />
-          <button type="submit">Register</button>
+          <button type="submit" style="border-radius: 5px">Register</button>
         </form>
         <p>
           <a class="switch" onclick="toggleForms()"
@@ -57,7 +53,7 @@
             placeholder="Password"
             required
           />
-          <button type="submit">Login</button>
+          <button type="submit" style="border-radius: 5px">Login</button>
         </form>
         <p>
           <a class="switch" onclick="toggleForms()"
@@ -65,6 +61,14 @@
           >
         </p>
       </div>
+    </div>
+    <div class="attribution">
+      Coded by&nbsp;<a>amive</a
+      ><a href="https://github.com/amive" target="_blank"
+        ><img
+          src="https://cdn3.emoji.gg/emojis/8346-github.png"
+          alt="My Github"
+      /></a>
     </div>
     <script src="js/LogRegSwitch.js"></script>
     <script src="./js/register.js"></script>

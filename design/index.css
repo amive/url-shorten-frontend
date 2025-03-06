@@ -1,11 +1,42 @@
 body {
   font-family: "Press Start 2P", cursive;
+  -webkit-text-stroke: 0.5px black;
   text-align: center;
   color: white;
   overflow: hidden;
   position: relative;
   margin: 0;
   padding: 0;
+}
+h1 img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+.attribution {
+  font-size: 13px;
+  -webkit-text-stroke: 0.5px black;
+  color: lightblue;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(1.5px);
+}
+
+.attribution a {
+  text-decoration: none;
+}
+.attribution img {
+  display: flex;
+  width: 20px;
+  padding: 6px;
 }
 .animated-bg {
   position: fixed;

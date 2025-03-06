@@ -19,7 +19,31 @@
   list-style-type: none;
   padding: 0;
 }
+.attribution {
+  font-size: 13px;
+  -webkit-text-stroke: 0.5px black;
+  color: lightblue;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(1.5px);
+}
 
+.attribution a {
+  text-decoration: none;
+}
+.attribution img {
+  display: flex;
+  width: 20px;
+  padding: 6px;
+}
 .shorten-url {
   background: rgba(0, 0, 0, 0.8);
   border: 2px solid #228b22;
@@ -39,8 +63,12 @@
   font-size: 9px;
   line-height: 1.2;
 }
-
-.shorten-url__details,
+.shorten-url__details {
+  gap: 119px;
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
 .shorten-url__actions {
   display: flex;
   align-items: center;
@@ -51,6 +79,12 @@
   flex: 1;
   max-width: 100px;
 }
+
+h1 img {
+  width: 20px; /* Adjust size */
+  height: auto;
+}
+
 input {
   display: block;
   width: calc(100% - 20px);
@@ -227,6 +261,7 @@ button:hover {
 body {
   font-family: "Press Start 2P", cursive;
   font-size: 8px;
+  -webkit-text-stroke: 0.1px black;
   text-align: center;
   color: white;
   overflow: hidden;

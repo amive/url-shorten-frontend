@@ -108,10 +108,6 @@ const getShortUrls = async () => {
         newUrlInput.classList.toggle("hidden");
         updateButton.classList.toggle("hidden");
         deleteButton.classList.toggle("hidden");
-
-        if (!newUrlInput.classList.contains("hidden")) {
-          newUrlInput.value = shortUrl.originalUrl;
-        }
       });
 
       updateButton.addEventListener("click", async () => {
