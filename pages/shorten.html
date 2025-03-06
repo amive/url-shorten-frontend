@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shorten</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorten - Minecraft Edition</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
     <script src="../js/private.js"></script>
-</head>
-<body>
-    <a href="/pages/logout.html">Logout</a>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../design/shorten.css" />
+  </head>
+  <body>
+    <div id="successNotification" class="notification hidden">
+      <p style="color: #00ff00">URL deleted successfully!</p>
+    </div>
+
+    <a href="/pages/logout.html" class="logout">Logout</a>
+    <div class="animated-bg"></div>
     <div class="container">
-        <h1>Create a shortcut for your URL</h1>
-        <form id="shorten-form" method="post">
-            <input type="url" name="url" placeholder="Enter your URL" required>
-            <button type="submit">Shorten</button>
-        </form>
-        <div id="shorten-result"></div>
+      <h1>Create a shortcut for your URL</h1>
+      <form id="shorten-form" method="post">
+        <input type="url" name="url" placeholder="Enter your URL" required />
+        <button type="submit">Shorten</button>
+      </form>
+      <div
+        id="shorten-result"
+        style="background-color: rgba(0, 0, 0, 0.596)"
+      ></div>
     </div>
     <div class="container">
-        <h1>Your shortened URLs</h1>
+      <h1>Your shortened URLs</h1>
+      <div class="shorten-list-container">
         <div id="shorten-list"></div>
+      </div>
     </div>
     <script src="../js/createShortUrl.js"></script>
     <script src="../js/getShortUrls.js"></script>
-</body>
+    <script src="../js/updateShortUrl.js"></script>
+    <script src="../js/deleteShortUrl.js"></script>
+  </body>
 </html>
