@@ -74,12 +74,12 @@ const getShortUrls = async () => {
         <div class="shorten-url__actions hidden">
             <button class="edit-btn">Edit</button>
             <input type="text" class="shorten-url__update-input hidden" placeholder="New URL" />
-            <img src="https://fontawesome.com/icons/trash-can?f=classic&s=regular" alt="Update" class="update-btn hidden" onclick="updateShortUrl('${
+            <a class="update-btn hidden" onclick="updateShortUrl('${
               shortUrl.id
-            }')"/>
-           <img src="https://fontawesome.com/icons/trash-can?f=classic&s=regular" alt="Delete" class="delete-btn hidden" onclick="deleteShortUrl('${
+            }')">Update</a>
+           <a class="delete-btn hidden" onclick="deleteShortUrl('${
              shortUrl.id
-           }')"/>
+           }')">Delete</a>
         </div>
       `;
 
