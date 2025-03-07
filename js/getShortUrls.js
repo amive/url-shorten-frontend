@@ -138,6 +138,7 @@ const showAlert = (message, type) => {
   alertBox.textContent = message;
   alertBox.className = type === "success" ? "alert-success" : "alert-error";
   alertBox.style.backgroundColor = type === "success" ? "#4caf50" : "#f44336";
+  alertBox.style.fontSize = "15px";
   document.body.appendChild(alertBox);
   setTimeout(() => {
     alertBox.remove();

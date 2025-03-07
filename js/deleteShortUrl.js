@@ -2,7 +2,7 @@ const deleteShortUrl = async (urlId) => {
   const showCustomNotification = (message, isSuccess) => {
     const notification = document.getElementById("successNotification");
     notification.innerText = message;
-    notification.style.backgroundColor = isSuccess ? "#4caf50" : "#f44336";
+    notification.style.backgroundColor = isSuccess ? "red" : "red";
     notification.style.fontSize = "15px";
     notification.classList.remove("hidden");
     setTimeout(() => {

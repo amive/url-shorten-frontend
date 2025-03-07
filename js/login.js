@@ -3,6 +3,9 @@ const loginForm = document.getElementById("login-form");
 loginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  if (loginForm.classList.contains("hidden")) {
+    return;
+  }
   const email = loginForm.querySelector(
     '#login-form > input[name="email"]'
   ).value;

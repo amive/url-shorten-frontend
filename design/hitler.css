@@ -1,0 +1,165 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff4081;
+}
+
+body {
+  background: rgba(255, 64, 129, 0.8);
+  text-align: center;
+}
+
+.hitler {
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
+}
+
+.register.slide-in,
+.login.slide-in {
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateZ(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.face {
+  width: 200px;
+  height: 177px;
+  background: #a97d64;
+  margin: 50px auto;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.eye-shade {
+  background: #000;
+  width: 50.7px;
+  height: 59.3px;
+  margin: -58.7px;
+  position: absolute;
+  top: 38.7px;
+  left: 58.3px;
+}
+
+.eye-shade.rgt {
+  left: 105px;
+  top: 37.7px;
+  width: 116px;
+  height: 40.7px;
+}
+
+.eye-white {
+  position: absolute;
+  width: 30px;
+  height: 22.4px;
+  background: #fff;
+  z-index: 500;
+  left: 40px;
+  top: 80px;
+  overflow: hidden;
+}
+
+.eye-white.rgt {
+  right: 40px;
+  left: auto;
+}
+
+.eye-ball {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 20px;
+  top: 20px;
+  max-width: 10px;
+  max-height: 10px;
+  transition: width 0.1s, height 0.1s;
+}
+
+.eye-ball:after {
+  content: "";
+  background: rgb(137, 0, 0);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.mustache {
+  position: absolute;
+  height: 19.8px;
+  width: 35px;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #000;
+}
+
+.mouth {
+  position: absolute;
+  height: 6px;
+  width: 30.7px;
+  bottom: 35.6px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #000;
+}
+
+.body {
+  background: #494697;
+  position: absolute;
+  top: 145.3px;
+  left: -24.3px;
+  width: 248px;
+  height: 268px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hand {
+  width: 40px;
+  height: 30px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  background: #a97d64;
+  margin: 5px;
+  position: absolute;
+  top: 70px;
+  left: -25px;
+}
+
+.hand:after,
+.hand:before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 11px;
+}
+
+.hand:before {
+  top: 26px;
+}
+
+.hand.rgt {
+  top: -19.3px;
+  left: 338px;
+}
+
+.hand.rgt:after,
+.hand.rgt:before {
+  left: auto;
+  right: -5px;
+}

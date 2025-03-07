@@ -14,7 +14,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
+.alert-success,
+.alert-error {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
 #shorten-list {
   list-style-type: none;
   padding: 0;
@@ -35,7 +42,6 @@
   text-align: center;
   backdrop-filter: blur(1.5px);
 }
-
 .attribution a {
   text-decoration: none;
 }
@@ -54,7 +60,6 @@
   cursor: pointer;
   font-size: 12px;
 }
-
 .shorten-url:hover {
   background: rgba(0, 0, 0, 0.9);
 }
@@ -64,7 +69,7 @@
   line-height: 1.2;
 }
 .shorten-url__details {
-  gap: 119px;
+  gap: 126px;
   display: flex;
   align-items: center;
   margin-top: -40px;
@@ -81,7 +86,7 @@
 }
 
 h1 img {
-  width: 20px; /* Adjust size */
+  width: 20px;
   height: auto;
 }
 
@@ -205,9 +210,10 @@ button:hover {
   width: 500px;
   padding: 15px;
   background: rgba(0, 0, 0, 0.8);
-  border: 3px solid #228b22;
+  border: 3px solid #8b8684;
   border-radius: 8px;
-  box-shadow: 0px 0px 15px #228b22;
+  box-shadow: 0px 0px 15px #706b68;
+  position: relative;
   box-sizing: border-box;
   margin-bottom: 15px;
 }
@@ -281,8 +287,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("https://wallpapercave.com/uwp/uwp4244539.jpeg") no-repeat
-    center center fixed;
+  background: url("https://i.redd.it/xznk72kqno781.jpg") no-repeat center center
+    fixed;
   background-size: cover;
   z-index: -1;
 }
@@ -290,9 +296,9 @@ body {
   width: 500px;
   padding: 15px;
   background: rgba(0, 0, 0, 0.8);
-  border: 3px solid #228b22;
+  border: 3px solid #8b8684;
   border-radius: 8px;
-  box-shadow: 0px 0px 15px #228b22;
+  box-shadow: 0px 0px 15px #706b68;
   position: relative;
   box-sizing: border-box;
   margin-bottom: 15px;
@@ -305,7 +311,7 @@ body {
 .shorten-url {
   padding: 8px;
   font-size: 12px;
-  border: 2px solid #228b22;
+  border: 2px solid #6c6764;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 6px;
   margin-bottom: 8px;

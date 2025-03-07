@@ -2,6 +2,9 @@ const registerForm = document.getElementById("register-form");
 
 registerForm.addEventListener("submit", async (e) => {
   e.preventDefault();
+  if (registerForm.classList.contains("hidden")) {
+    return;
+  }
   const name = registerForm.querySelector('input[name="name"]').value;
   const email = registerForm.querySelector(
     '#register-form > input[name="email"]'

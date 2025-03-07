@@ -1,32 +1,30 @@
 function toggleForms() {
   const registerForm = document.getElementById("register");
   const loginForm = document.getElementById("login");
-  const container = document.querySelector(".container");
+  const hitlerHands = document.querySelectorAll(".hand");
 
   if (registerForm.classList.contains("visible")) {
-    // Slide up the register form
-    container.style.animation = "slideUp 0.5s forwards";
+    hitlerHands.forEach((hand) => hand.classList.add("slide-in"));
 
     setTimeout(() => {
       registerForm.classList.remove("visible");
       registerForm.classList.add("hidden");
       loginForm.classList.remove("hidden");
-      loginForm.classList.add("visible");
-      // Slide down the login form
-      container.style.animation = "slideDown 0.5s forwards";
-    }, 500); // Match the duration of the slide up animation
+      loginForm.classList.add("visible", "slide-in");
+
+      hitlerHands.forEach((hand) => hand.classList.remove("slide-in"));
+    }, 500);
   } else {
-    // Slide up the login form
-    container.style.animation = "slideUp 0.5s forwards";
+    hitlerHands.forEach((hand) => hand.classList.add("slide-in"));
+    loginForm.classList.add("slide-in");
 
     setTimeout(() => {
       loginForm.classList.remove("visible");
       loginForm.classList.add("hidden");
       registerForm.classList.remove("hidden");
-      registerForm.classList.add("visible");
-      // Slide down the register form
-      container.style.animation = "slideDown 0.5s forwards";
-    }, 500); // Match the duration of the slide up animation
+      registerForm.classList.add("visible", "slide-in");
+
+      hitlerHands.forEach((hand) => hand.classList.remove("slide-in"));
+    }, 500);
   }
 }
-console.log(LogRegSwitch.js);
