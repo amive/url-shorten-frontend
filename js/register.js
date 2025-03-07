@@ -11,7 +11,7 @@ registerForm.addEventListener("submit", async (e) => {
   ).value;
 
   const url =
-    "https://www.shorten-url-api.infobrains.club/api-docs/#/Auth/post_api_public_auth_register";
+    "https://www.shorten-url-api.infobrains.club/api/public/auth/register";
 
   const result = await fetch(url, {
     method: "POST",
