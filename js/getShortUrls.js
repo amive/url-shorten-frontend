@@ -114,14 +114,15 @@ const getShortUrls = async () => {
         const newUrl = newUrlInput.value;
         if (newUrl) {
           try {
-            await updateShortUrl(shortUrl.id, newUrl);
-            showAlert("URL updated successfully!", "success");
-            getShortUrls();
-
-            const shortenResult = document.getElementById("shorten-result");
+            const response = await updateShortUrl(shortUrl.id, newUrl);
+            if (response.status === 200 || response.status === 201) {
+              showAlert("URL updated successfully!", "success");
+              getShortUrls();
+            } else {
+              showAlert("Failed to update URL!", "error");
+            }
           } catch (error) {
             console.error(error);
-            showAlert("Failed to update URL!", "error");
           }
         } else {
           showAlert("Please enter a new URL!", "error");
