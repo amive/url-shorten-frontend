@@ -35,11 +35,11 @@ const updateShortUrl = async (urlId, newUrl) => {
     if (!response.ok) {
       const errorData = await response.json();
       console.error(
-        `Failed to update URL: ${errorData.message || response.statusText}`
+        `${errorData.message || response.statusText}`
       );
       showAlert(
-        `Failed to update URL: ${errorData.message || response.statusText}`,
-        "error"
+        `${errorData.message || response.statusText}`,
+        "error" //Update url error msg
       );
       return;
     }
