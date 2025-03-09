@@ -38,8 +38,7 @@ const updateShortUrl = async (urlId, newUrl) => {
         `${errorData.message || response.statusText}`
       );
       showAlert(
-        `${errorData.message || response.statusText}`,
-        "error" //Update url error msg
+        'Invalid URL',"error" //Update url error msg
       );
       return;
     }
